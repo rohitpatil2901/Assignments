@@ -12,7 +12,8 @@ package Assignments;
  
 class Atwo extends AOne{
 	
-	Atwo(){
+	Atwo(int a, int b){
+		super();
 		System.out.println("Atwo");
 		
 	}
@@ -20,7 +21,8 @@ class Atwo extends AOne{
 
 class Athree extends Atwo{
 	
-	Athree(){
+	Athree(String s){
+		super(10,20);
 		System.out.println("Athree");
 	}
 }
@@ -29,7 +31,7 @@ class Athree extends Atwo{
  class AFour extends Athree {
 
 	AFour(){
-		
+		super("Rohit");
 		System.out.println("Afour");
 		
 	}
