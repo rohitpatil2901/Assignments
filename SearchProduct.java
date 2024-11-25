@@ -1,5 +1,6 @@
 package testNgAutomationScenarios;
 
+import java.time.Duration;
 import java.util.Iterator;
 import java.util.Set;
 
@@ -12,6 +13,8 @@ public class SearchProduct extends LaunchAndQuitBrowser {
 
 	@Test
 	public void searchAmazonProduct() {
+
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 
 		WebElement search = driver.findElement(By.xpath("//input[@id='twotabsearchtextbox']"));
 		search.click();
